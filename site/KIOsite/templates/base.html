@@ -44,7 +44,7 @@
     <body>
     <!-- django CMS Toolbar -->
         {% cms_toolbar %}
-
+        
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
             <div class="container-fluid">
@@ -54,23 +54,26 @@
                         <span class="sr-only">Toggle navigation</span>
                         Menu <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html">{{ request.site.name }}</a>
+                    <a class="navbar-brand" href="base.html">{{ request.site.name }}</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <div class="container">
-                <img src="{% static 'img/KIO_logo_pl.png' %}" align="left" width="130">
+                        <img src="{% static 'img/KIO_logo_pl.png' %}" align="left" width="130">
                     <ul class="nav navbar-nav navbar-right">
-
-                        {% show_menu 0 0 100 100 %}
+                        {% show_menu 0 10 10 10 "menu/custom-menu.html" %}
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container -->
+            <div class="lan contact" align="right">
+                        <a href="base.html">{% language_chooser "menu/language_chooser.html" %}</a>
+            </div>
         </nav>
-
+                 
+           
         <!-- Page Header -->
         <!-- Set your background image for this header on the line below. -->
         {% block header %}
@@ -93,6 +96,7 @@
 
         <!-- Main Content -->
         <div class="container">
+        <div class="breadcrumb">{% show_breadcrumb %}</div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     {% block content %}{% endblock %}
@@ -111,7 +115,27 @@
                         {% show_menu 0 0 100 100 %}
                     </ul>
                 </div>-->
-                <div class="contact">
+                <table class="contact">
+                    <tbody>
+                        <tr>
+                        <td width="310">
+                            <p><strong>Katedra Inteligencji Obliczeniowej</strong><br>
+                            <strong>pok. 201/6, bud D-2</strong><br>
+                            <strong>Wybrzeże Wyspiańskiego 27</strong><br>
+                            <strong>50-370 Wrocław</strong></p>
+                        </td>
+                        <td width="290">
+                            <p>tel. <strong>71 320 31 30</strong><br>
+                            e-mail: <strong><a href="mailto:samorzad@pwr.edu.pl">
+                            <font color="white">samorzad@pwr.edu.pl</font></a></strong></p>
+                        </td>
+                        <td width="500">
+                            <a href="http://pwr.edu.pl/"><img align="right" src="{% static 'img/logo PWr pion  bez tla.png' %}" height="100"></a>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--<div class="contact">
                     <ul>
                         <li>Katedra Inteligencji Obliczeniowej</li>
                         <li>Wybrzeże Wyspiańskiego 27</li>
@@ -123,8 +147,7 @@
                         <li>TEL: +48 71 320 35 16</li>
                         <li>FAX: +48 71 321 108</li>
                     </ul>
-                </div>
-                                      
+                </div>-->
                 </div> 
             </div>
                        

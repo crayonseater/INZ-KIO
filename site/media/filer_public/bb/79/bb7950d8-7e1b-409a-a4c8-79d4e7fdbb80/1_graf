@@ -1,0 +1,321 @@
+#1 graf
+
+A. backtaracking
+
+roz[4]	czas	kroki	
+1		461		125
+2		175ms and 125	
+3		144ms and 125
+4		131ms and 125
+5		139ms and 125
+
+roz[6]	czas	kroki
+1		2259ms and 6526
+2		2263ms and 6526
+3		2159ms and 6526
+4		2163ms and 6526
+5		2254ms and 6526
+
+roz[7]	czas	kroki
+1		131ms and 52
+2		146ms and 52
+3		208ms and 52
+4		143ms and 52	
+5		204ms and 52
+
+roz[9]	czas	kroki
+1		5759ms and 2845
+2		5932ms and 2845
+3		5736ms and 2845
+4		6061ms and 2845
+5		5821ms and 2845
+
+roz[10]	czas	kroki
+1		10197ms and 3677
+2		10655ms and 3677
+3		10249ms and 3677
+4		10239ms and 3677
+5		10315ms and 3677
+
+roz[11]	czas	kroki
+1		2975ms and 687
+2		2822ms and 687
+3		2888ms and 687
+4		2768ms and 687 
+5		2747ms and 687
+
+roz[12]	czas	kroki
+		>1min	?
+
+B. forward
+		roz[4]	czas	kroki
+1		165ms and 72
+2		110ms and 72	
+3		129ms and 72
+4		123ms and 72
+5		127ms and 72
+
+roz[6]	czas	kroki
+1		544ms and 2153
+2		527ms and 2153
+3		575ms and 2153
+4		538ms and 2153
+5		551ms and 2153
+
+roz[7]	czas	kroki
+1		125ms and 49
+2		157ms and 49
+3		165ms and 49
+4		144ms and 49	
+5		174ms and 49
+
+roz[9]	czas	kroki
+1		1146ms and 1366
+2		1149ms and 1366
+3		1251ms and 1366
+4		1083ms and 1366
+5		1098ms and 1366
+
+roz[10]	czas	kroki
+1		1710ms and 2279
+2		1725ms and 2279
+3		1731ms and 2279
+4		1756ms and 2279
+5		1750ms and 2279 
+
+roz[13]	czas	kroki
+1		1773ms and 668
+2		1862ms and 668
+3		1887ms and 668
+4		1841ms and 668 
+5		1819ms and 668
+
+
+#2 binary
+A.backtrack
+
+roz[4]	zajetosc[1/4]	czas	kroki
+1						85ms and 14
+2						103ms and 15
+3						86ms and 13
+4						101ms and 15 
+5						145ms and 21
+
+roz[4]	zajetosc[1/2]	czas	kroki
+1						74ms and 1	N
+2						88ms and 15
+3						96ms and 13
+4						98ms and 1	N
+5						97ms and 1	N
+
+roz[4]	zajetosc[3/4]	czas	kroki
+1						93ms and 9	N
+2						76ms and 1	N
+3						95ms and 1	N
+4						95ms and 11	N
+5						100ms and 1	N
+
+roz[6]	zajetosc[1/4]	czas	kroki
+1						115ms and 136
+2						122ms and 58
+3						96ms and 1 		N
+4						106ms and 90
+5						96ms and 59
+
+roz[6]	zajetosc[1/2]	czas	kroki
+1						90ms and 1 		N
+2						88ms and 1
+3						88ms and 3
+4						79ms and 1
+5						82ms and 1
+
+roz[6]	zajetosc[3/4]	czas	kroki
+1						78ms and 1
+2						98ms and 14
+3						91ms and 1
+4						137ms and 1
+5						88ms and 1 
+
+roz[8]	zajetosc[1/4]	czas	kroki
+1						2360ms and 87637 	N
+2						122ms and 99
+3						134ms and 176
+4						173ms and 428
+5						197ms and 599	
+
+roz[8]	zajetosc[1/2]	czas	kroki
+1						77ms and 1		N
+2						86ms and 1		N
+3						112ms and 1 	N
+4						93ms and 1		N
+5						112ms and 55
+
+roz[8]	zajetosc[3/4]	czas	kroki
+1						94ms and 1		N
+2						76ms and 1		N
+3						89ms and 15		N
+4						77ms and 1		N
+5						90ms and 1		N
+
+roz[10]	zajetosc[1/4]	czas	kroki
+1						82ms and 1		N
+2						486ms and 1453
+3						544ms and 5508
+4						365ms and 1646
+5						555ms and 4687	
+
+roz[10]	zajetosc[1/2]	czas	kroki
+1						139ms and 1	
+2						89ms and 1
+3						84ms and 1 
+4						86ms and 1
+5						100ms and 1
+
+roz[10]	zajetosc[3/4]	czas	kroki
+1						80ms and 1 
+2						83ms and 1 
+3						92ms and 1
+4						88ms and 1
+5						91ms and 1
+
+roz[12]	zajetosc[1/4]	czas	kroki
+1						5786ms and 110258
+2						4544ms and 89801
+3						1955ms and 22369
+4						134459ms and 3408373
+5						3869ms and 71674						
+
+roz[12]	zajetosc[1/2]	czas	kroki
+1						90ms and 1
+2						92ms and 1
+3						80ms and 1
+4						99ms and 1
+5						80ms and 
+
+roz[12]	zajetosc[3/4]	czas	kroki
+1						84ms and 1 
+2						81ms and 1
+3						86ms and 1
+4						87ms and 1
+5						88ms and 1
+
+roz[13]	zajetosc[1/4]	czas	kroki
+1						5786ms and 110258
+2						4544ms and 89801
+3						1955ms and 22369
+4						134459ms and 3408373
+5						3869ms and 71674
+
+B.forward
+
+roz[4]	zajetosc[1/4]	czas	kroki
+1						90ms and 12
+2						80ms and 12
+3						86ms and 13
+4						91ms and 29
+5						89ms and 37
+
+roz[4]	zajetosc[1/2]	czas	kroki
+1						78ms and 9
+2						87ms and 12
+3						100ms and 10
+4						140ms and 14
+5						103ms and 11
+
+roz[4]	zajetosc[3/4]	czas	kroki
+1						86ms and 1	N
+2						96ms and 5	N
+3						88ms and 1	N
+4						109ms and 10
+5						80ms and 12
+
+roz[6]	zajetosc[1/4]	czas	kroki
+1						90ms and 42
+2						136ms and 237
+3						90ms and 32 	
+4						87ms and 28
+5						90ms and 1		N
+
+roz[6]	zajetosc[1/2]	czas	kroki
+1						75ms and 1 		N
+2						87ms and 1 
+3						123ms and 159 
+4						110ms and 96 Y
+5						98ms and 50 Y
+
+roz[6]	zajetosc[3/4]	czas	kroki
+1						76ms and 1	N
+2						83ms and 1	N
+3						85ms and 1	N
+4						89ms and 1	N
+5						98ms and 1 	N
+
+roz[8]	zajetosc[1/4]	czas	kroki
+1						127ms and 83
+2						147ms and 128
+3						142ms and 95
+4						285ms and 929 
+5						567ms and 4842	N	
+
+roz[8]	zajetosc[1/2]	czas	kroki
+1						94ms and 1		N
+2						79ms and 1		N
+3						95ms and 1		N
+4						86ms and 1		N
+5						111ms and 1		N
+
+roz[8]	zajetosc[3/4]	czas	kroki
+1						88ms and 1		N
+2						94ms and 1		N
+3						95ms and 1		N
+4						95ms and 1		N
+5						83ms and 1		N
+
+roz[10]	zajetosc[1/4]	czas	kroki
+1						184ms and 296
+2						4060ms and 119562
+3						1025ms and 4885
+4						1174ms and 4254 
+5						978ms and 4242	
+
+roz[10]	zajetosc[1/2]	czas	kroki
+1						109ms and 1 	N	
+2						903ms and 8526	N
+3						128ms and 15	N 
+4						124ms and 1		N
+5						191ms and 1 	N
+
+roz[10]	zajetosc[3/4]	czas	kroki
+1						82ms and 1 	N 
+2						82ms and 1  N
+3						92ms and 1  N
+4						78ms and 1  N
+5						82ms and 1  N
+
+roz[12]	zajetosc[1/4]	czas	kroki
+1						8579ms and 213583 N
+2						3646ms and 62586 
+3						8145ms and 176953 
+4						5876ms and 112478
+5						1156ms and 8754 						
+
+roz[12]	zajetosc[1/2]	czas	kroki
+1						3915ms and 64123
+2						101ms and 1	N
+3						106ms and 1 N
+4						84ms and 1 N
+5						102ms and 1 N
+
+roz[12]	zajetosc[3/4]	czas	kroki
+1						84ms and 1 	 
+2						88ms and 1 	
+3						126ms and 1
+4						104ms and 1 
+5						111ms and 1
+
+roz[13]	zajetosc[1/4]	czas	kroki
+1						5786ms and 110258
+2						4544ms and 89801
+3						1955ms and 22369
+4						134459ms and 3408373
+5						3869ms and 71674

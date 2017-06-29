@@ -151,7 +151,7 @@ hr.small {
   background-size: 100% 50%;
   -o-background-size: 100% 50%;
   /*margin-bottom: 50px;*/
-  margin-top: -20px;
+  /*margin-top: 15px;*/
   opacity: 0.9;
 }
 
@@ -210,7 +210,7 @@ hr.small {
 .intro-header .post-heading .meta {
   font-family: 'Lora', 'Times New Roman', serif;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 16px;
 }
 .intro-header .post-heading .meta a {

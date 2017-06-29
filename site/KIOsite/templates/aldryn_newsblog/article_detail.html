@@ -22,11 +22,9 @@
                         <h1>{% render_model article "title" "" "" "striptags" %}</h1>
                         <h2 class="subheading">{% render_model article "lead_in" "" "" "striptags" %}</h2>
                         <span class="meta">
-                            Posted by
                             <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">
                                 {{ article.author.name }}
-                            </a>
-                            on {{ article.publishing_date|date:"F n, Y" }}
+                            </a>, {{ article.publishing_date|date:"F n, Y" }}
                         </span>
                     </div>
                 </div>
@@ -43,11 +41,11 @@
 
     <ul class="pager">
         {% if prev_article %}
-            <li><a href="{{ prev_article.get_absolute_url }}">{% trans "Previous Article" %}</a></li>
+            <li><a href="{{ prev_article.get_absolute_url }}">{% trans "Back" %}</a></li>
         {% endif %}
-        <li><a href="{% namespace_url "article-list" %}">{% trans "Back to Overview" %}</a></li>
+        <li><a href="{% namespace_url "article-list" %}">{% trans "Summary" %}</a></li>
         {% if next_article %}
-            <li><a href="{{ next_article.get_absolute_url }}">{% trans "Next Article" %}</a></li>
+            <li><a href="{{ next_article.get_absolute_url }}">{% trans "Next" %}</a></li>
         {% endif %}
     </ul>
 {% endblock %}

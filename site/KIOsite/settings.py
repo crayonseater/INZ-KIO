@@ -185,22 +185,47 @@ LANGUAGES = (
     ('en', gettext('en')),
 )
 
+# CMS_LANGUAGES = {
+#     1: [
+#         {
+#             'hide_untranslated': False,
+#             'redirect_on_fallback': True,
+#             'code': 'pl',
+#             'public': True,
+#             'name': gettext('pl'),
+#         },
+#     ],
+#     ## Customize this
+#     'default': {
+#         'redirect_on_fallback': True,
+#         'public': True,
+#         'hide_untranslated': False,
+#     },
+# }
+
 CMS_LANGUAGES = {
-    ## Customize this
-    'default': {
-        'redirect_on_fallback': True,
-        'public': True,
-        'hide_untranslated': False,
-    },
     1: [
         {
-            'hide_untranslated': False,
-            'redirect_on_fallback': True,
-            'code': 'pl',
+            'code': 'en',
+            'name': gettext('English'),
+            'fallbacks': ['pl'],
             'public': True,
-            'name': gettext('pl'),
+            'hide_untranslated': True,
+            'redirect_on_fallback':False,
+        },
+        {
+            'code': 'pl',
+            'name': gettext('Polish'),
+            'fallbacks': ['en'],
+            'public': True,
         },
     ],
+    'default': {
+        'fallbacks': ['en', 'pl'],
+        'redirect_on_fallback':True,
+        'public': True,
+        'hide_untranslated': False,
+    }
 }
 
 CMS_TEMPLATES = (

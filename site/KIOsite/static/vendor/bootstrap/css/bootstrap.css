@@ -2122,7 +2122,8 @@ pre code {
     width: 75%;
   }
   .col-lg-8 {
-    width: 66.66666667%;
+   /* width: 66.66666667%;*/
+   width: inherit;
   }
   .col-lg-7 {
     width: 58.33333333%;
@@ -2254,7 +2255,8 @@ pre code {
     margin-left: 25%;
   }
   .col-lg-offset-2 {
-    margin-left: 16.66666667%;
+    /*margin-left: 16.66666667%;*/
+    margin-left: 0.4%
   }
   .col-lg-offset-1 {
     margin-left: 8.33333333%;
@@ -6798,9 +6800,26 @@ button.close {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
+  color: #fff;
+  margin-left: 12%;
 }
-.contact ul {
+.contact ul td{
   margin-top: -3px;
   color: #ebebeb;
   list-style: none;
+  /*margin-left: 12%;*/
+}
+
+.dropdown li {
+  list-style-type: none;
+  display: inline;
+}
+
+.lan{
+  list-style: none;
+  font-size: 14px;
+  margin-top: -60px;
+}
+.lan a:visited{
+  color: #9f9f9f;
 }

@@ -78,8 +78,6 @@
         <!-- Set your background image for this header on the line below. -->
         {% block header %}
             {% placeholder header or %}
-            
-            </div>
                 <header class="intro-header" style=" background-image: url('{% static 'img/kio-bg.jpg' %}')">
                     <div class="container">
                         <div class="row">
@@ -99,68 +97,56 @@
         <div class="breadcrumb">{% show_breadcrumb %}</div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    {% block content %}{% endblock %}
+                    {% block content %}
+                        {% placeholder content %}
+                    {% endblock %}
                 </div>
             </div>
         </div>
 
-        <hr>
-
         <!-- Footer -->
-        <footer>
-            <div class="blue-container">
-            <div class="row ">
-                <!--<div class="navbar navbar-bottom navbar-header navbar-right">
-                    <ul class="nav ">
-                        {% show_menu 0 0 100 100 %}
-                    </ul>
-                </div>-->
-                <table class="contact">
-                    <tbody>
-                        <tr>
-                        <td width="310">
-                            <p><strong>Katedra Inteligencji Obliczeniowej</strong><br>
-                            <strong>pok. 201/6, bud D-2</strong><br>
-                            <strong>Wybrzeże Wyspiańskiego 27</strong><br>
-                            <strong>50-370 Wrocław</strong></p>
-                        </td>
-                        <td width="290">
-                            <p>tel. <strong>71 320 31 30</strong><br>
-                            e-mail: <strong><a href="mailto:samorzad@pwr.edu.pl">
-                            <font color="white">samorzad@pwr.edu.pl</font></a></strong></p>
-                        </td>
-                        <td width="500">
-                            <a href="http://pwr.edu.pl/"><img align="right" src="{% static 'img/logo PWr pion  bez tla.png' %}" height="100"></a>
-                        </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!--<div class="contact">
-                    <ul>
-                        <li>Katedra Inteligencji Obliczeniowej</li>
-                        <li>Wybrzeże Wyspiańskiego 27</li>
-                        <li>50-370 Wrocław</li>
-                        <li> </li>
-                        <li>bud. D-2 | pok. 201/6</li>
-                        <li> </li>
-                        <li>kio@pwr.edu.pl</li>
-                        <li>TEL: +48 71 320 35 16</li>
-                        <li>FAX: +48 71 321 108</li>
-                    </ul>
-                </div>-->
-                </div> 
-            </div>
-                       
-                 
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p class="copyright text-muted">Copyright &copy; {{ request.site.name }} {% now "Y" %}</p>
-                    </div>
-                </div>                
-            </div>
-        </footer>
+
+        {% block footer %}
+            {% static_placeholder 'footer' or %}
+                <footer>
+                    <div class="blue-container">
+                    <div class="row ">
+                        <table class="contact">
+                            <tbody>
+                                <tr>
+                                <td width="310">
+                                    <p><strong>Katedra Inteligencji Obliczeniowej</strong><br>
+                                    <strong>pok. 201/6, bud D-2</strong><br>
+                                    <strong>Wybrzeże Wyspiańskiego 27</strong><br>
+                                    <strong>50-370 Wrocław</strong></p>
+                                </td>
+                                <td width="290">
+                                    <p>tel. <strong>71 320 31 30</strong><br>
+                                    e-mail: <strong><a href="mailto:samorzad@pwr.edu.pl">
+                                    <font color="white">samorzad@pwr.edu.pl</font></a></strong></p>
+                                </td>
+                                <td width="500">
+                                    <a href="http://pwr.edu.pl/"><img align="right" src="{% static 'img/logo PWr pion  bez tla.png' %}" height="100"></a>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> 
+                </div>
+                               
+                         
+                </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                                <p class="copyright text-muted">Copyright &copy; {{ request.site.name }} {% now "Y" %}</p>
+                        </div>
+                    </div>                
+                </div>
+            </footer>
+            {% endstatic_placeholder %}
+        {% endblock %}
+
 
         <!-- jQuery -->
         <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>

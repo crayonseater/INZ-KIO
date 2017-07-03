@@ -44,7 +44,13 @@
     <body>
     <!-- django CMS Toolbar -->
         {% cms_toolbar %}
-        
+        <div class="grey-row lan ">
+        <ul>
+            <li>
+                <a href="base.html">{% language_chooser "menu/language_chooser.html" %}</a>
+            </li>            
+        </ul>
+        </div>
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
             <div class="container-fluid">
@@ -63,14 +69,17 @@
                         <img src="{% static 'img/KIO_logo_pl.png' %}" align="left" width="130">
                     <ul class="nav navbar-nav navbar-right">
                         {% show_menu 0 10 10 10 "menu/custom-menu.html" %}
+
                     </ul>
+
+                       
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container -->
-            <div class="lan contact" align="right">
-                        <a href="base.html">{% language_chooser "menu/language_chooser.html" %}</a>
-            </div>
+            <!--div class="lan contact" align="left" position="relative">
+                        <a href="base.html" >{% language_chooser "menu/language_chooser.html" %}</a>
+            </div-->
         </nav>
                  
            
@@ -126,7 +135,7 @@
                                     <font color="white">samorzad@pwr.edu.pl</font></a></strong></p>
                                 </td>
                                 <td width="500">
-                                    <a href="http://pwr.edu.pl/"><img align="right" src="{% static 'img/logo PWr pion  bez tla.png' %}" height="100"></a>
+                                    <a href="http://pwr.edu.pl/"><img align="right" src="{% static 'img/logo PWr pion  bez tla.png' %}" height="70"></a>
                                 </td>
                                 </tr>
                             </tbody>
